@@ -29,7 +29,7 @@ void fitdata(const char* input, const char* output)
   model->fitTo(*data) ;
 
   // Plot data and PDF overlaid
-  RooPlot* xframe = x->frame(Title("Fit example")) ;
+  RooPlot* xframe = x->frame(Title("roofit example")) ;
   data->plotOn(xframe) ;
   model->plotOn(xframe,Normalization(1.0,RooAbsReal::RelativeExpected)) ;
 
